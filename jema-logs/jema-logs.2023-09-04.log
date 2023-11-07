@@ -1,0 +1,796 @@
+[09-04-2023_16:32:38.150_IST] [WARN ] - [HikariPool] - SpringBootJPAHikariCP - Thread starvation or clock leap detected (housekeeper delta=20h7m57s548ms983µs).
+[09-04-2023_17:04:45.913_IST] [INFO ] - [JemaAppApplication] - Starting JemaAppApplication using Java 17.0.6 on DESKTOP-4LG0T0N with PID 12848 (D:\workspace-spring\JemaApp\target\classes started by Raj Khatri in D:\workspace-spring\JemaApp)
+[09-04-2023_17:04:45.922_IST] [INFO ] - [JemaAppApplication] - No active profile set, falling back to 1 default profile: "default"
+[09-04-2023_17:04:45.926_IST] [INFO ] - [Version] - HV000001: Hibernate Validator 6.2.5.Final
+[09-04-2023_17:04:50.291_IST] [INFO ] - [RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[09-04-2023_17:04:51.040_IST] [INFO ] - [RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 710 ms. Found 45 JPA repository interfaces.
+[09-04-2023_17:04:53.137_IST] [INFO ] - [TomcatWebServer] - Tomcat initialized with port(s): 8701 (http)
+[09-04-2023_17:04:53.165_IST] [INFO ] - [Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8701"]
+[09-04-2023_17:04:53.166_IST] [INFO ] - [StandardService] - Starting service [Tomcat]
+[09-04-2023_17:04:53.167_IST] [INFO ] - [StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.73]
+[09-04-2023_17:04:53.782_IST] [INFO ] - [[/]] - Initializing Spring embedded WebApplicationContext
+[09-04-2023_17:04:53.783_IST] [INFO ] - [ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 7596 ms
+[09-04-2023_17:04:54.319_IST] [INFO ] - [LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[09-04-2023_17:04:54.523_IST] [INFO ] - [Version] - HHH000412: Hibernate ORM core version 5.6.15.Final
+[09-04-2023_17:04:55.098_IST] [INFO ] - [Version] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[09-04-2023_17:04:55.559_IST] [INFO ] - [Dialect] - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[09-04-2023_17:05:00.028_IST] [WARN ] - [HikariConfig] - SpringBootJPAHikariCP - maxLifetime is less than 30000ms, setting to default 1800000ms.
+[09-04-2023_17:05:00.032_IST] [WARN ] - [HikariConfig] - SpringBootJPAHikariCP - idleTimeout is less than 10000ms, setting to default 600000ms.
+[09-04-2023_17:05:00.032_IST] [INFO ] - [HikariDataSource] - SpringBootJPAHikariCP - Starting...
+[09-04-2023_17:05:05.248_IST] [INFO ] - [HikariDataSource] - SpringBootJPAHikariCP - Start completed.
+[09-04-2023_17:05:45.722_IST] [INFO ] - [JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[09-04-2023_17:05:45.753_IST] [INFO ] - [LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[09-04-2023_17:05:49.805_IST] [WARN ] - [JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[09-04-2023_17:05:50.902_IST] [WARN ] - [WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[09-04-2023_17:05:50.903_IST] [INFO ] - [DefaultSecurityFilterChain] - Will not secure Ant [pattern='/v2/api-docs']
+[09-04-2023_17:05:50.904_IST] [WARN ] - [WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/configuration/ui']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[09-04-2023_17:05:50.904_IST] [INFO ] - [DefaultSecurityFilterChain] - Will not secure Ant [pattern='/configuration/ui']
+[09-04-2023_17:05:50.904_IST] [WARN ] - [WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[09-04-2023_17:05:50.904_IST] [INFO ] - [DefaultSecurityFilterChain] - Will not secure Ant [pattern='/swagger-resources/**']
+[09-04-2023_17:05:50.904_IST] [WARN ] - [WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/configuration/security']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[09-04-2023_17:05:50.904_IST] [INFO ] - [DefaultSecurityFilterChain] - Will not secure Ant [pattern='/configuration/security']
+[09-04-2023_17:05:50.904_IST] [WARN ] - [WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[09-04-2023_17:05:50.905_IST] [INFO ] - [DefaultSecurityFilterChain] - Will not secure Ant [pattern='/swagger-ui.html']
+[09-04-2023_17:05:50.905_IST] [WARN ] - [WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[09-04-2023_17:05:50.905_IST] [INFO ] - [DefaultSecurityFilterChain] - Will not secure Ant [pattern='/webjars/**']
+[09-04-2023_17:05:51.016_IST] [INFO ] - [DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@46262fc3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ca87dbe, org.springframework.security.web.context.SecurityContextPersistenceFilter@27ddc4d3, org.springframework.security.web.header.HeaderWriterFilter@1c7108e, org.springframework.web.filter.CorsFilter@2eeee108, org.springframework.security.web.authentication.logout.LogoutFilter@287c4e96, com.jema.app.jwt.JwtRequestFilter@3818609f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2defc6c1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5dcaa37a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c1aed5a, org.springframework.security.web.session.SessionManagementFilter@14318e90, org.springframework.security.web.access.ExceptionTranslationFilter@ac570e0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2f9f939]
+[09-04-2023_17:05:52.048_IST] [INFO ] - [Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8701"]
+[09-04-2023_17:05:52.091_IST] [INFO ] - [TomcatWebServer] - Tomcat started on port(s): 8701 (http) with context path ''
+[09-04-2023_17:05:52.092_IST] [INFO ] - [DocumentationPluginsBootstrapper] - Context refreshed
+[09-04-2023_17:05:52.119_IST] [INFO ] - [DocumentationPluginsBootstrapper] - Found 1 custom documentation plugin(s)
+[09-04-2023_17:05:52.152_IST] [INFO ] - [ApiListingReferenceScanner] - Scanning for api listing references
+[09-04-2023_17:05:52.437_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_1
+[09-04-2023_17:05:52.444_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_1
+[09-04-2023_17:05:52.454_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_1
+[09-04-2023_17:05:52.478_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_1
+[09-04-2023_17:05:52.499_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_1
+[09-04-2023_17:05:52.505_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_1
+[09-04-2023_17:05:52.528_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_2
+[09-04-2023_17:05:52.567_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_3
+[09-04-2023_17:05:52.578_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_2
+[09-04-2023_17:05:52.601_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_2
+[09-04-2023_17:05:52.612_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_2
+[09-04-2023_17:05:52.621_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_4
+[09-04-2023_17:05:52.661_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_3
+[09-04-2023_17:05:52.679_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_2
+[09-04-2023_17:05:52.691_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_3
+[09-04-2023_17:05:52.719_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_3
+[09-04-2023_17:05:52.747_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_5
+[09-04-2023_17:05:52.757_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_4
+[09-04-2023_17:05:52.776_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_3
+[09-04-2023_17:05:52.789_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_4
+[09-04-2023_17:05:52.815_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_4
+[09-04-2023_17:05:52.852_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_5
+[09-04-2023_17:05:52.953_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_5
+[09-04-2023_17:05:52.964_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_5
+[09-04-2023_17:05:52.970_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_6
+[09-04-2023_17:05:52.976_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_6
+[09-04-2023_17:05:52.981_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_2
+[09-04-2023_17:05:52.987_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_4
+[09-04-2023_17:05:52.996_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_6
+[09-04-2023_17:05:53.014_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_7
+[09-04-2023_17:05:53.021_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_7
+[09-04-2023_17:05:53.032_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_7
+[09-04-2023_17:05:53.049_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_8
+[09-04-2023_17:05:53.054_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_8
+[09-04-2023_17:05:53.071_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_8
+[09-04-2023_17:05:53.080_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_6
+[09-04-2023_17:05:53.086_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_9
+[09-04-2023_17:05:53.092_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_9
+[09-04-2023_17:05:53.097_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingGET_1
+[09-04-2023_17:05:53.102_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_5
+[09-04-2023_17:05:53.107_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_9
+[09-04-2023_17:05:53.125_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_7
+[09-04-2023_17:05:53.132_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: blockUsingPUT_1
+[09-04-2023_17:05:53.141_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_10
+[09-04-2023_17:05:53.147_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_10
+[09-04-2023_17:05:53.154_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllVendorsUsingPOST_1
+[09-04-2023_17:05:53.164_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_6
+[09-04-2023_17:05:53.175_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_10
+[09-04-2023_17:05:53.186_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_8
+[09-04-2023_17:05:53.197_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_11
+[09-04-2023_17:05:53.205_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_11
+[09-04-2023_17:05:53.214_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_3
+[09-04-2023_17:05:53.220_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_7
+[09-04-2023_17:05:53.229_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_11
+[09-04-2023_17:05:53.239_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_9
+[09-04-2023_17:05:53.250_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_12
+[09-04-2023_17:05:53.259_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_12
+[09-04-2023_17:05:53.266_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_4
+[09-04-2023_17:05:53.273_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_8
+[09-04-2023_17:05:53.282_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_12
+[09-04-2023_17:05:53.298_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addTaxUsingPOST_1
+[09-04-2023_17:05:53.308_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_13
+[09-04-2023_17:05:53.318_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_13
+[09-04-2023_17:05:53.324_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllTaxUsingPOST_1
+[09-04-2023_17:05:53.329_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_13
+[09-04-2023_17:05:53.334_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateTaxUsingPUT_1
+[09-04-2023_17:05:53.351_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_10
+[09-04-2023_17:05:53.357_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_14
+[09-04-2023_17:05:53.361_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_14
+[09-04-2023_17:05:53.366_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_5
+[09-04-2023_17:05:53.371_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_9
+[09-04-2023_17:05:53.381_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_11
+[09-04-2023_17:05:53.386_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_15
+[09-04-2023_17:05:53.394_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_15
+[09-04-2023_17:05:53.399_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_6
+[09-04-2023_17:05:53.406_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_10
+[09-04-2023_17:05:53.413_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_14
+[09-04-2023_17:05:53.419_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_12
+[09-04-2023_17:05:53.423_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_7
+[09-04-2023_17:05:53.429_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_13
+[09-04-2023_17:05:53.433_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_8
+[09-04-2023_17:05:53.451_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_14
+[09-04-2023_17:05:53.462_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: cancelUsingPOST_1
+[09-04-2023_17:05:53.469_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByCustomerIdUsingPOST_1
+[09-04-2023_17:05:53.476_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_16
+[09-04-2023_17:05:53.482_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findCanceledByIdUsingGET_1
+[09-04-2023_17:05:53.489_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findStatusHistoryByIdUsingGET_1
+[09-04-2023_17:05:53.495_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllCustomerOrderUsingPOST_1
+[09-04-2023_17:05:53.502_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateInvoiceUsingPOST_1
+[09-04-2023_17:05:53.512_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_15
+[09-04-2023_17:05:53.539_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_16
+[09-04-2023_17:05:53.547_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_17
+[09-04-2023_17:05:53.567_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_16
+[09-04-2023_17:05:53.572_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_15
+[09-04-2023_17:05:53.575_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingGET_2
+[09-04-2023_17:05:53.595_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addEmployeeUsingPOST_1
+[09-04-2023_17:05:53.605_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: cancelUsingPOST_2
+[09-04-2023_17:05:53.616_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_18
+[09-04-2023_17:05:53.631_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findCanceledByIdUsingGET_2
+[09-04-2023_17:05:53.639_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findReturnedByIdUsingGET_1
+[09-04-2023_17:05:53.646_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findStatusHistoryByIdUsingGET_2
+[09-04-2023_17:05:53.656_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllPriceHistoryUsingPOST_1
+[09-04-2023_17:05:53.664_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllVendorsUsingPOST_2
+[09-04-2023_17:05:53.672_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: markOffUsingPOST_1
+[09-04-2023_17:05:53.684_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: returnedUsingPOST_1
+[09-04-2023_17:05:53.692_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateInvoiceUsingPOST_2
+[09-04-2023_17:05:53.701_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updatePriceUsingPOST_1
+[09-04-2023_17:05:53.711_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_17
+[09-04-2023_17:05:53.717_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_16
+[09-04-2023_17:05:53.722_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_17
+[09-04-2023_17:05:53.727_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_19
+[09-04-2023_17:05:53.731_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_9
+[09-04-2023_17:05:53.738_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_17
+[09-04-2023_17:05:53.743_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_18
+[09-04-2023_17:05:53.748_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_20
+[09-04-2023_17:05:53.753_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_10
+[09-04-2023_17:05:53.759_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_11
+[09-04-2023_17:05:53.764_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_18
+[09-04-2023_17:05:53.784_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addTaxUsingPOST_2
+[09-04-2023_17:05:53.793_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_19
+[09-04-2023_17:05:53.800_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_21
+[09-04-2023_17:05:53.810_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllTaxUsingPOST_2
+[09-04-2023_17:05:53.819_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_19
+[09-04-2023_17:05:53.833_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateTaxUsingPUT_2
+[09-04-2023_17:05:53.853_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_18
+[09-04-2023_17:05:53.862_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_11
+[09-04-2023_17:05:53.868_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_12
+[09-04-2023_17:05:53.877_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_19
+[09-04-2023_17:05:53.883_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_20
+[09-04-2023_17:05:53.890_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_22
+[09-04-2023_17:05:53.895_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingGET_3
+[09-04-2023_17:05:53.901_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_12
+[09-04-2023_17:05:53.920_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_20
+[09-04-2023_17:05:53.927_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_21
+[09-04-2023_17:05:53.934_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_23
+[09-04-2023_17:05:53.955_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_13
+[09-04-2023_17:05:53.966_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingGET_1
+[09-04-2023_17:05:53.975_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_13
+[09-04-2023_17:05:53.981_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_14
+[09-04-2023_17:05:53.987_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_20
+[09-04-2023_17:05:53.999_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addTaxUsingPOST_3
+[09-04-2023_17:05:54.005_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_22
+[09-04-2023_17:05:54.011_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_24
+[09-04-2023_17:05:54.018_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllTaxUsingPOST_3
+[09-04-2023_17:05:54.025_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_21
+[09-04-2023_17:05:54.031_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateTaxUsingPUT_3
+[09-04-2023_17:05:54.045_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_23
+[09-04-2023_17:05:54.051_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_25
+[09-04-2023_17:05:54.060_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllTypeUsingGET_1
+[09-04-2023_17:05:54.128_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_21
+[09-04-2023_17:05:54.135_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_24
+[09-04-2023_17:05:54.141_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_26
+[09-04-2023_17:05:54.148_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllVendorsUsingPOST_3
+[09-04-2023_17:05:54.158_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_14
+[09-04-2023_17:05:54.166_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_22
+[09-04-2023_17:05:54.200_IST] [INFO ] - [JemaAppApplication] - Started JemaAppApplication in 69.551 seconds (JVM running for 73.665)
+[09-04-2023_18:11:35.579_IST] [WARN ] - [HikariPool] - SpringBootJPAHikariCP - Thread starvation or clock leap detected (housekeeper delta=25m29s580ms68µs400ns).
+[09-04-2023_20:53:10.024_IST] [WARN ] - [HikariPool] - SpringBootJPAHikariCP - Thread starvation or clock leap detected (housekeeper delta=1h37m3s532ms598µs900ns).
+[09-04-2023_21:06:43.794_IST] [INFO ] - [SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] - Application shutdown requested.
+[09-04-2023_21:06:43.901_IST] [INFO ] - [Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8701"]
+[09-04-2023_21:06:43.901_IST] [INFO ] - [StandardService] - Stopping service [Tomcat]
+[09-04-2023_21:06:43.917_IST] [WARN ] - [WebappClassLoaderBase] - The web application [ROOT] appears to have started a thread named [SpringBootJPAHikariCP housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.6/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.6/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.6/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.6/java.lang.Thread.run(Thread.java:833)
+[09-04-2023_21:06:43.922_IST] [INFO ] - [Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8701"]
+[09-04-2023_21:06:43.927_IST] [INFO ] - [Http11NioProtocol] - Destroying ProtocolHandler ["http-nio-8701"]
+[09-04-2023_21:06:43.982_IST] [INFO ] - [LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[09-04-2023_21:06:43.992_IST] [INFO ] - [HikariDataSource] - SpringBootJPAHikariCP - Shutdown initiated...
+[09-04-2023_21:06:43.998_IST] [INFO ] - [HikariDataSource] - SpringBootJPAHikariCP - Shutdown completed.
+[09-04-2023_21:06:55.537_IST] [INFO ] - [JemaAppApplication] - Starting JemaAppApplication using Java 17.0.6 on DESKTOP-4LG0T0N with PID 2776 (D:\workspace-spring\JemaApp\target\classes started by Raj Khatri in D:\workspace-spring\JemaApp)
+[09-04-2023_21:06:55.545_IST] [INFO ] - [JemaAppApplication] - No active profile set, falling back to 1 default profile: "default"
+[09-04-2023_21:06:55.545_IST] [INFO ] - [Version] - HV000001: Hibernate Validator 6.2.5.Final
+[09-04-2023_21:06:57.367_IST] [INFO ] - [RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[09-04-2023_21:06:57.732_IST] [INFO ] - [RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 351 ms. Found 45 JPA repository interfaces.
+[09-04-2023_21:06:58.865_IST] [INFO ] - [TomcatWebServer] - Tomcat initialized with port(s): 8701 (http)
+[09-04-2023_21:06:58.882_IST] [INFO ] - [Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8701"]
+[09-04-2023_21:06:58.883_IST] [INFO ] - [StandardService] - Starting service [Tomcat]
+[09-04-2023_21:06:58.884_IST] [INFO ] - [StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.73]
+[09-04-2023_21:06:59.323_IST] [INFO ] - [[/]] - Initializing Spring embedded WebApplicationContext
+[09-04-2023_21:06:59.324_IST] [INFO ] - [ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 3681 ms
+[09-04-2023_21:06:59.620_IST] [INFO ] - [LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[09-04-2023_21:06:59.745_IST] [INFO ] - [Version] - HHH000412: Hibernate ORM core version 5.6.15.Final
+[09-04-2023_21:07:00.052_IST] [INFO ] - [Version] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[09-04-2023_21:07:00.276_IST] [INFO ] - [Dialect] - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[09-04-2023_21:07:02.718_IST] [WARN ] - [HikariConfig] - SpringBootJPAHikariCP - maxLifetime is less than 30000ms, setting to default 1800000ms.
+[09-04-2023_21:07:02.721_IST] [WARN ] - [HikariConfig] - SpringBootJPAHikariCP - idleTimeout is less than 10000ms, setting to default 600000ms.
+[09-04-2023_21:07:02.721_IST] [INFO ] - [HikariDataSource] - SpringBootJPAHikariCP - Starting...
+[09-04-2023_21:07:07.717_IST] [INFO ] - [HikariDataSource] - SpringBootJPAHikariCP - Start completed.
+[09-04-2023_21:07:41.668_IST] [INFO ] - [JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[09-04-2023_21:07:41.703_IST] [INFO ] - [LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[09-04-2023_21:07:43.124_IST] [WARN ] - [AnnotationConfigServletWebServerApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerController': Unsatisfied dependency expressed through field 'mCustomerService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerServiceImpl': Unsatisfied dependency expressed through field 'mCustomerRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerRepository' defined in com.jema.app.repositories.CustomerRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract int com.jema.app.repositories.CustomerRepository.updateStatus(java.util.List,int); Reason: Using named parameters for method public abstract int com.jema.app.repositories.CustomerRepository.updateStatus(java.util.List,int) but parameter 'Optional[id]' not found in annotated query 'UPDATE Customer SET status = :status  WHERE id IN ?1 '!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract int com.jema.app.repositories.CustomerRepository.updateStatus(java.util.List,int) but parameter 'Optional[id]' not found in annotated query 'UPDATE Customer SET status = :status  WHERE id IN ?1 '!
+[09-04-2023_21:07:43.128_IST] [INFO ] - [LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[09-04-2023_21:07:43.133_IST] [INFO ] - [HikariDataSource] - SpringBootJPAHikariCP - Shutdown initiated...
+[09-04-2023_21:07:43.145_IST] [INFO ] - [HikariDataSource] - SpringBootJPAHikariCP - Shutdown completed.
+[09-04-2023_21:07:43.149_IST] [INFO ] - [StandardService] - Stopping service [Tomcat]
+[09-04-2023_21:07:43.171_IST] [INFO ] - [ConditionEvaluationReportLoggingListener] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[09-04-2023_21:07:43.208_IST] [ERROR] - [SpringApplication] - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerController': Unsatisfied dependency expressed through field 'mCustomerService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerServiceImpl': Unsatisfied dependency expressed through field 'mCustomerRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerRepository' defined in com.jema.app.repositories.CustomerRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract int com.jema.app.repositories.CustomerRepository.updateStatus(java.util.List,int); Reason: Using named parameters for method public abstract int com.jema.app.repositories.CustomerRepository.updateStatus(java.util.List,int) but parameter 'Optional[id]' not found in annotated query 'UPDATE Customer SET status = :status  WHERE id IN ?1 '!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract int com.jema.app.repositories.CustomerRepository.updateStatus(java.util.List,int) but parameter 'Optional[id]' not found in annotated query 'UPDATE Customer SET status = :status  WHERE id IN ?1 '!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.jema.app.JemaAppApplication.main(JemaAppApplication.java:29)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customerServiceImpl': Unsatisfied dependency expressed through field 'mCustomerRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerRepository' defined in com.jema.app.repositories.CustomerRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract int com.jema.app.repositories.CustomerRepository.updateStatus(java.util.List,int); Reason: Using named parameters for method public abstract int com.jema.app.repositories.CustomerRepository.updateStatus(java.util.List,int) but parameter 'Optional[id]' not found in annotated query 'UPDATE Customer SET status = :status  WHERE id IN ?1 '!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract int com.jema.app.repositories.CustomerRepository.updateStatus(java.util.List,int) but parameter 'Optional[id]' not found in annotated query 'UPDATE Customer SET status = :status  WHERE id IN ?1 '!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customerRepository' defined in com.jema.app.repositories.CustomerRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract int com.jema.app.repositories.CustomerRepository.updateStatus(java.util.List,int); Reason: Using named parameters for method public abstract int com.jema.app.repositories.CustomerRepository.updateStatus(java.util.List,int) but parameter 'Optional[id]' not found in annotated query 'UPDATE Customer SET status = :status  WHERE id IN ?1 '!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract int com.jema.app.repositories.CustomerRepository.updateStatus(java.util.List,int) but parameter 'Optional[id]' not found in annotated query 'UPDATE Customer SET status = :status  WHERE id IN ?1 '!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 34 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract int com.jema.app.repositories.CustomerRepository.updateStatus(java.util.List,int); Reason: Using named parameters for method public abstract int com.jema.app.repositories.CustomerRepository.updateStatus(java.util.List,int) but parameter 'Optional[id]' not found in annotated query 'UPDATE Customer SET status = :status  WHERE id IN ?1 '!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract int com.jema.app.repositories.CustomerRepository.updateStatus(java.util.List,int) but parameter 'Optional[id]' not found in annotated query 'UPDATE Customer SET status = :status  WHERE id IN ?1 '!
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:107)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:95)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1061)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:97)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:87)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:87)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:365)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:323)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:231)
+	at org.springframework.data.util.Lazy.get(Lazy.java:115)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:329)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 44 common frames omitted
+Caused by: java.lang.IllegalStateException: Using named parameters for method public abstract int com.jema.app.repositories.CustomerRepository.updateStatus(java.util.List,int) but parameter 'Optional[id]' not found in annotated query 'UPDATE Customer SET status = :status  WHERE id IN ?1 '!
+	at org.springframework.data.jpa.repository.query.JpaQueryMethod.assertParameterNamesInAnnotatedQuery(JpaQueryMethod.java:172)
+	at org.springframework.data.jpa.repository.query.JpaQueryMethod.<init>(JpaQueryMethod.java:139)
+	at org.springframework.data.jpa.repository.query.DefaultJpaQueryMethodFactory.build(DefaultJpaQueryMethodFactory.java:44)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:93)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:103)
+	... 66 common frames omitted
+[09-04-2023_21:16:56.645_IST] [INFO ] - [JemaAppApplication] - Starting JemaAppApplication using Java 17.0.6 on DESKTOP-4LG0T0N with PID 6296 (D:\workspace-spring\JemaApp\target\classes started by Raj Khatri in D:\workspace-spring\JemaApp)
+[09-04-2023_21:16:56.654_IST] [INFO ] - [Version] - HV000001: Hibernate Validator 6.2.5.Final
+[09-04-2023_21:16:56.654_IST] [INFO ] - [JemaAppApplication] - No active profile set, falling back to 1 default profile: "default"
+[09-04-2023_21:16:58.694_IST] [INFO ] - [RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[09-04-2023_21:16:59.105_IST] [INFO ] - [RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 397 ms. Found 45 JPA repository interfaces.
+[09-04-2023_21:17:00.178_IST] [INFO ] - [TomcatWebServer] - Tomcat initialized with port(s): 8701 (http)
+[09-04-2023_21:17:00.192_IST] [INFO ] - [Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8701"]
+[09-04-2023_21:17:00.193_IST] [INFO ] - [StandardService] - Starting service [Tomcat]
+[09-04-2023_21:17:00.193_IST] [INFO ] - [StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.73]
+[09-04-2023_21:17:00.550_IST] [INFO ] - [[/]] - Initializing Spring embedded WebApplicationContext
+[09-04-2023_21:17:00.551_IST] [INFO ] - [ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 3762 ms
+[09-04-2023_21:17:00.860_IST] [INFO ] - [LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[09-04-2023_21:17:00.944_IST] [INFO ] - [Version] - HHH000412: Hibernate ORM core version 5.6.15.Final
+[09-04-2023_21:17:01.241_IST] [INFO ] - [Version] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[09-04-2023_21:17:01.552_IST] [INFO ] - [Dialect] - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[09-04-2023_21:17:04.118_IST] [WARN ] - [HikariConfig] - SpringBootJPAHikariCP - maxLifetime is less than 30000ms, setting to default 1800000ms.
+[09-04-2023_21:17:04.122_IST] [WARN ] - [HikariConfig] - SpringBootJPAHikariCP - idleTimeout is less than 10000ms, setting to default 600000ms.
+[09-04-2023_21:17:04.122_IST] [INFO ] - [HikariDataSource] - SpringBootJPAHikariCP - Starting...
+[09-04-2023_21:17:08.419_IST] [INFO ] - [HikariDataSource] - SpringBootJPAHikariCP - Start completed.
+[09-04-2023_21:17:38.597_IST] [INFO ] - [JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[09-04-2023_21:17:38.630_IST] [INFO ] - [LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[09-04-2023_21:17:42.397_IST] [WARN ] - [JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[09-04-2023_21:17:43.305_IST] [WARN ] - [WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[09-04-2023_21:17:43.306_IST] [INFO ] - [DefaultSecurityFilterChain] - Will not secure Ant [pattern='/v2/api-docs']
+[09-04-2023_21:17:43.307_IST] [WARN ] - [WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/configuration/ui']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[09-04-2023_21:17:43.307_IST] [INFO ] - [DefaultSecurityFilterChain] - Will not secure Ant [pattern='/configuration/ui']
+[09-04-2023_21:17:43.307_IST] [WARN ] - [WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[09-04-2023_21:17:43.307_IST] [INFO ] - [DefaultSecurityFilterChain] - Will not secure Ant [pattern='/swagger-resources/**']
+[09-04-2023_21:17:43.307_IST] [WARN ] - [WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/configuration/security']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[09-04-2023_21:17:43.308_IST] [INFO ] - [DefaultSecurityFilterChain] - Will not secure Ant [pattern='/configuration/security']
+[09-04-2023_21:17:43.308_IST] [WARN ] - [WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[09-04-2023_21:17:43.308_IST] [INFO ] - [DefaultSecurityFilterChain] - Will not secure Ant [pattern='/swagger-ui.html']
+[09-04-2023_21:17:43.308_IST] [WARN ] - [WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[09-04-2023_21:17:43.309_IST] [INFO ] - [DefaultSecurityFilterChain] - Will not secure Ant [pattern='/webjars/**']
+[09-04-2023_21:17:43.404_IST] [INFO ] - [DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@45dac901, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75fe135a, org.springframework.security.web.context.SecurityContextPersistenceFilter@51b4ab43, org.springframework.security.web.header.HeaderWriterFilter@257f8040, org.springframework.web.filter.CorsFilter@27bd53d5, org.springframework.security.web.authentication.logout.LogoutFilter@324fb35d, com.jema.app.jwt.JwtRequestFilter@2623ad23, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5710598e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@315203b1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7721408, org.springframework.security.web.session.SessionManagementFilter@53b0fbf6, org.springframework.security.web.access.ExceptionTranslationFilter@2bab73fd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@74d926a0]
+[09-04-2023_21:17:44.149_IST] [INFO ] - [Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8701"]
+[09-04-2023_21:17:44.200_IST] [INFO ] - [TomcatWebServer] - Tomcat started on port(s): 8701 (http) with context path ''
+[09-04-2023_21:17:44.201_IST] [INFO ] - [DocumentationPluginsBootstrapper] - Context refreshed
+[09-04-2023_21:17:44.233_IST] [INFO ] - [DocumentationPluginsBootstrapper] - Found 1 custom documentation plugin(s)
+[09-04-2023_21:17:44.261_IST] [INFO ] - [ApiListingReferenceScanner] - Scanning for api listing references
+[09-04-2023_21:17:44.473_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_1
+[09-04-2023_21:17:44.482_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_1
+[09-04-2023_21:17:44.488_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_1
+[09-04-2023_21:17:44.504_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_1
+[09-04-2023_21:17:44.524_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_1
+[09-04-2023_21:17:44.530_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_1
+[09-04-2023_21:17:44.550_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_2
+[09-04-2023_21:17:44.582_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_3
+[09-04-2023_21:17:44.597_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_2
+[09-04-2023_21:17:44.623_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_2
+[09-04-2023_21:17:44.635_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_2
+[09-04-2023_21:17:44.643_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_4
+[09-04-2023_21:17:44.650_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_3
+[09-04-2023_21:17:44.663_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_2
+[09-04-2023_21:17:44.672_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_3
+[09-04-2023_21:17:44.689_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_3
+[09-04-2023_21:17:44.714_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_5
+[09-04-2023_21:17:44.721_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_4
+[09-04-2023_21:17:44.735_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_3
+[09-04-2023_21:17:44.745_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_4
+[09-04-2023_21:17:44.776_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_4
+[09-04-2023_21:17:44.825_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_5
+[09-04-2023_21:17:44.989_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_5
+[09-04-2023_21:17:45.003_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_5
+[09-04-2023_21:17:45.013_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_6
+[09-04-2023_21:17:45.024_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_6
+[09-04-2023_21:17:45.037_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_2
+[09-04-2023_21:17:45.051_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_4
+[09-04-2023_21:17:45.064_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_6
+[09-04-2023_21:17:45.097_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_7
+[09-04-2023_21:17:45.106_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_7
+[09-04-2023_21:17:45.120_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_7
+[09-04-2023_21:17:45.141_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_8
+[09-04-2023_21:17:45.147_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_8
+[09-04-2023_21:17:45.167_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_8
+[09-04-2023_21:17:45.178_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_6
+[09-04-2023_21:17:45.183_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_9
+[09-04-2023_21:17:45.191_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_9
+[09-04-2023_21:17:45.198_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingGET_1
+[09-04-2023_21:17:45.205_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_5
+[09-04-2023_21:17:45.213_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_9
+[09-04-2023_21:17:45.232_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_7
+[09-04-2023_21:17:45.239_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: blockUsingPUT_1
+[09-04-2023_21:17:45.246_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_10
+[09-04-2023_21:17:45.252_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_10
+[09-04-2023_21:17:45.260_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllVendorsUsingPOST_1
+[09-04-2023_21:17:45.266_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_6
+[09-04-2023_21:17:45.276_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_10
+[09-04-2023_21:17:45.285_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_8
+[09-04-2023_21:17:45.299_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_11
+[09-04-2023_21:17:45.307_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_11
+[09-04-2023_21:17:45.313_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_3
+[09-04-2023_21:17:45.321_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_7
+[09-04-2023_21:17:45.328_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_11
+[09-04-2023_21:17:45.338_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_9
+[09-04-2023_21:17:45.344_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_12
+[09-04-2023_21:17:45.351_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_12
+[09-04-2023_21:17:45.358_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_4
+[09-04-2023_21:17:45.364_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_8
+[09-04-2023_21:17:45.372_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_12
+[09-04-2023_21:17:45.382_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addTaxUsingPOST_1
+[09-04-2023_21:17:45.388_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_13
+[09-04-2023_21:17:45.396_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_13
+[09-04-2023_21:17:45.405_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllTaxUsingPOST_1
+[09-04-2023_21:17:45.412_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_13
+[09-04-2023_21:17:45.419_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateTaxUsingPUT_1
+[09-04-2023_21:17:45.437_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_10
+[09-04-2023_21:17:45.441_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_14
+[09-04-2023_21:17:45.447_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_14
+[09-04-2023_21:17:45.451_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_5
+[09-04-2023_21:17:45.458_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_9
+[09-04-2023_21:17:45.466_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_11
+[09-04-2023_21:17:45.473_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_15
+[09-04-2023_21:17:45.479_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_15
+[09-04-2023_21:17:45.484_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_6
+[09-04-2023_21:17:45.490_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_10
+[09-04-2023_21:17:45.497_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_14
+[09-04-2023_21:17:45.504_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_12
+[09-04-2023_21:17:45.508_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_7
+[09-04-2023_21:17:45.515_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_13
+[09-04-2023_21:17:45.519_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_8
+[09-04-2023_21:17:45.538_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_14
+[09-04-2023_21:17:45.551_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: cancelUsingPOST_1
+[09-04-2023_21:17:45.558_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByCustomerIdUsingPOST_1
+[09-04-2023_21:17:45.565_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_16
+[09-04-2023_21:17:45.574_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findCanceledByIdUsingGET_1
+[09-04-2023_21:17:45.581_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findStatusHistoryByIdUsingGET_1
+[09-04-2023_21:17:45.588_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllCustomerOrderUsingPOST_1
+[09-04-2023_21:17:45.597_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateInvoiceUsingPOST_1
+[09-04-2023_21:17:45.610_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_15
+[09-04-2023_21:17:45.638_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_16
+[09-04-2023_21:17:45.645_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_17
+[09-04-2023_21:17:45.664_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_16
+[09-04-2023_21:17:45.669_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_15
+[09-04-2023_21:17:45.673_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingGET_2
+[09-04-2023_21:17:45.689_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addEmployeeUsingPOST_1
+[09-04-2023_21:17:45.703_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: cancelUsingPOST_2
+[09-04-2023_21:17:45.715_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_18
+[09-04-2023_21:17:45.733_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findCanceledByIdUsingGET_2
+[09-04-2023_21:17:45.741_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findReturnedByIdUsingGET_1
+[09-04-2023_21:17:45.749_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findStatusHistoryByIdUsingGET_2
+[09-04-2023_21:17:45.759_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllPriceHistoryUsingPOST_1
+[09-04-2023_21:17:45.768_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllVendorsUsingPOST_2
+[09-04-2023_21:17:45.777_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: markOffUsingPOST_1
+[09-04-2023_21:17:45.789_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: returnedUsingPOST_1
+[09-04-2023_21:17:45.797_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateInvoiceUsingPOST_2
+[09-04-2023_21:17:45.807_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updatePriceUsingPOST_1
+[09-04-2023_21:17:45.821_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_17
+[09-04-2023_21:17:45.827_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_16
+[09-04-2023_21:17:45.832_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_17
+[09-04-2023_21:17:45.837_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_19
+[09-04-2023_21:17:45.841_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_9
+[09-04-2023_21:17:45.849_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_17
+[09-04-2023_21:17:45.856_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_18
+[09-04-2023_21:17:45.862_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_20
+[09-04-2023_21:17:45.869_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_10
+[09-04-2023_21:17:45.876_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_11
+[09-04-2023_21:17:45.884_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_18
+[09-04-2023_21:17:45.899_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addTaxUsingPOST_2
+[09-04-2023_21:17:45.905_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_19
+[09-04-2023_21:17:45.909_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_21
+[09-04-2023_21:17:45.914_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllTaxUsingPOST_2
+[09-04-2023_21:17:45.920_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_19
+[09-04-2023_21:17:45.925_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateTaxUsingPUT_2
+[09-04-2023_21:17:45.932_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_18
+[09-04-2023_21:17:45.939_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_11
+[09-04-2023_21:17:45.943_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_12
+[09-04-2023_21:17:45.949_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_19
+[09-04-2023_21:17:45.955_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_20
+[09-04-2023_21:17:45.959_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_22
+[09-04-2023_21:17:45.964_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingGET_3
+[09-04-2023_21:17:45.968_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_12
+[09-04-2023_21:17:45.982_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_20
+[09-04-2023_21:17:45.987_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_21
+[09-04-2023_21:17:45.993_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_23
+[09-04-2023_21:17:46.000_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_13
+[09-04-2023_21:17:46.005_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingGET_1
+[09-04-2023_21:17:46.009_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_13
+[09-04-2023_21:17:46.016_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_14
+[09-04-2023_21:17:46.021_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_20
+[09-04-2023_21:17:46.028_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addTaxUsingPOST_3
+[09-04-2023_21:17:46.033_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_22
+[09-04-2023_21:17:46.038_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_24
+[09-04-2023_21:17:46.062_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllTaxUsingPOST_3
+[09-04-2023_21:17:46.067_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_21
+[09-04-2023_21:17:46.073_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateTaxUsingPUT_3
+[09-04-2023_21:17:46.083_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_23
+[09-04-2023_21:17:46.090_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_25
+[09-04-2023_21:17:46.095_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllTypeUsingGET_1
+[09-04-2023_21:17:46.117_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_21
+[09-04-2023_21:17:46.128_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_24
+[09-04-2023_21:17:46.137_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_26
+[09-04-2023_21:17:46.149_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllVendorsUsingPOST_3
+[09-04-2023_21:17:46.164_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_14
+[09-04-2023_21:17:46.172_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_22
+[09-04-2023_21:17:46.212_IST] [INFO ] - [JemaAppApplication] - Started JemaAppApplication in 50.198 seconds (JVM running for 52.003)
+[09-04-2023_21:18:04.392_IST] [INFO ] - [[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[09-04-2023_21:18:04.392_IST] [INFO ] - [DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[09-04-2023_21:18:04.395_IST] [INFO ] - [DispatcherServlet] - Completed initialization in 2 ms
+[09-04-2023_21:18:04.425_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:04.515_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:04.529_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:04.534_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:04.538_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:04.542_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:04.542_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:04.560_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:04.561_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:04.564_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:04.565_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:04.572_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:04.585_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:04.590_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:04.590_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:04.592_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:04.599_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:04.606_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:04.622_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:04.729_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:04.730_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:04.854_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:04.863_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:04.864_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:04.900_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:04.942_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:04.961_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:18:06.733_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:22:59.440_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_21:23:04.609_IST] [WARN ] - [PoolBase] - SpringBootJPAHikariCP - Failed to validate connection org.postgresql.jdbc.PgConnection@484332b0 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+[09-04-2023_21:23:09.626_IST] [WARN ] - [PoolBase] - SpringBootJPAHikariCP - Failed to validate connection org.postgresql.jdbc.PgConnection@5bf916bb (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+[09-04-2023_21:23:14.632_IST] [WARN ] - [PoolBase] - SpringBootJPAHikariCP - Failed to validate connection org.postgresql.jdbc.PgConnection@495fe7c (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+[09-04-2023_21:23:15.310_IST] [INFO ] - [ApiController] - REST Request In Customer Controller to update status [CUST1558, CUST1559, CUST1560] 1,
+[09-04-2023_21:23:15.926_IST] [INFO ] - [CustomerController] - Response:details:of id :[CUST1558, CUST1559, CUST1560]  :Customer Successfully updated  
+[09-04-2023_21:25:12.888_IST] [INFO ] - [ApiController] - REST Request In Customer Controller to update status [CUST1558, CUST1559, CUST1560] 3,
+[09-04-2023_21:25:13.436_IST] [INFO ] - [CustomerController] - Response:details:of id :[CUST1558, CUST1559, CUST1560]  :Customer Successfully updated  
+[09-04-2023_21:25:47.895_IST] [INFO ] - [ApiController] - REST Request In Customer Controller to block customer [CUST1558, CUST1559, CUST1560] 1,
+[09-04-2023_21:25:48.440_IST] [INFO ] - [CustomerController] - Response:details:of id :[CUST1558, CUST1559, CUST1560]  :Customer Successfully updated  
+[09-04-2023_22:47:22.386_IST] [INFO ] - [Version] - HV000001: Hibernate Validator 6.2.5.Final
+[09-04-2023_22:47:22.381_IST] [INFO ] - [JemaAppApplication] - Starting JemaAppApplication using Java 17.0.6 on DESKTOP-4LG0T0N with PID 11664 (D:\workspace-spring\JemaApp\target\classes started by Raj Khatri in D:\workspace-spring\JemaApp)
+[09-04-2023_22:47:22.392_IST] [INFO ] - [JemaAppApplication] - No active profile set, falling back to 1 default profile: "default"
+[09-04-2023_22:47:25.169_IST] [INFO ] - [RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[09-04-2023_22:47:25.634_IST] [INFO ] - [RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 446 ms. Found 45 JPA repository interfaces.
+[09-04-2023_22:47:27.031_IST] [INFO ] - [TomcatWebServer] - Tomcat initialized with port(s): 8701 (http)
+[09-04-2023_22:47:27.051_IST] [INFO ] - [Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8701"]
+[09-04-2023_22:47:27.051_IST] [INFO ] - [StandardService] - Starting service [Tomcat]
+[09-04-2023_22:47:27.052_IST] [INFO ] - [StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.73]
+[09-04-2023_22:47:27.488_IST] [INFO ] - [[/]] - Initializing Spring embedded WebApplicationContext
+[09-04-2023_22:47:27.489_IST] [INFO ] - [ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 4968 ms
+[09-04-2023_22:47:27.941_IST] [INFO ] - [LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[09-04-2023_22:47:28.109_IST] [INFO ] - [Version] - HHH000412: Hibernate ORM core version 5.6.15.Final
+[09-04-2023_22:47:28.533_IST] [INFO ] - [Version] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[09-04-2023_22:47:28.862_IST] [INFO ] - [Dialect] - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[09-04-2023_22:47:31.647_IST] [WARN ] - [HikariConfig] - SpringBootJPAHikariCP - maxLifetime is less than 30000ms, setting to default 1800000ms.
+[09-04-2023_22:47:31.650_IST] [WARN ] - [HikariConfig] - SpringBootJPAHikariCP - idleTimeout is less than 10000ms, setting to default 600000ms.
+[09-04-2023_22:47:31.650_IST] [INFO ] - [HikariDataSource] - SpringBootJPAHikariCP - Starting...
+[09-04-2023_22:47:36.725_IST] [INFO ] - [HikariDataSource] - SpringBootJPAHikariCP - Start completed.
+[09-04-2023_22:48:12.440_IST] [INFO ] - [JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[09-04-2023_22:48:12.472_IST] [INFO ] - [LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[09-04-2023_22:48:16.503_IST] [WARN ] - [JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[09-04-2023_22:48:17.781_IST] [WARN ] - [WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/v2/api-docs']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[09-04-2023_22:48:17.782_IST] [INFO ] - [DefaultSecurityFilterChain] - Will not secure Ant [pattern='/v2/api-docs']
+[09-04-2023_22:48:17.783_IST] [WARN ] - [WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/configuration/ui']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[09-04-2023_22:48:17.783_IST] [INFO ] - [DefaultSecurityFilterChain] - Will not secure Ant [pattern='/configuration/ui']
+[09-04-2023_22:48:17.783_IST] [WARN ] - [WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/swagger-resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[09-04-2023_22:48:17.783_IST] [INFO ] - [DefaultSecurityFilterChain] - Will not secure Ant [pattern='/swagger-resources/**']
+[09-04-2023_22:48:17.784_IST] [WARN ] - [WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/configuration/security']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[09-04-2023_22:48:17.784_IST] [INFO ] - [DefaultSecurityFilterChain] - Will not secure Ant [pattern='/configuration/security']
+[09-04-2023_22:48:17.784_IST] [WARN ] - [WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/swagger-ui.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[09-04-2023_22:48:17.784_IST] [INFO ] - [DefaultSecurityFilterChain] - Will not secure Ant [pattern='/swagger-ui.html']
+[09-04-2023_22:48:17.784_IST] [WARN ] - [WebSecurity] - You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[09-04-2023_22:48:17.784_IST] [INFO ] - [DefaultSecurityFilterChain] - Will not secure Ant [pattern='/webjars/**']
+[09-04-2023_22:48:17.899_IST] [INFO ] - [DefaultSecurityFilterChain] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5d98216c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76312df9, org.springframework.security.web.context.SecurityContextPersistenceFilter@1d5522e4, org.springframework.security.web.header.HeaderWriterFilter@5afefa87, org.springframework.web.filter.CorsFilter@74d926a0, org.springframework.security.web.authentication.logout.LogoutFilter@b536551, com.jema.app.jwt.JwtRequestFilter@71443983, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@287c4e96, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50f95c8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1b256636, org.springframework.security.web.session.SessionManagementFilter@47f74d8f, org.springframework.security.web.access.ExceptionTranslationFilter@5eab0592, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@46b3c1c2]
+[09-04-2023_22:48:18.887_IST] [INFO ] - [Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8701"]
+[09-04-2023_22:48:18.928_IST] [INFO ] - [TomcatWebServer] - Tomcat started on port(s): 8701 (http) with context path ''
+[09-04-2023_22:48:18.930_IST] [INFO ] - [DocumentationPluginsBootstrapper] - Context refreshed
+[09-04-2023_22:48:18.961_IST] [INFO ] - [DocumentationPluginsBootstrapper] - Found 1 custom documentation plugin(s)
+[09-04-2023_22:48:19.000_IST] [INFO ] - [ApiListingReferenceScanner] - Scanning for api listing references
+[09-04-2023_22:48:19.254_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_1
+[09-04-2023_22:48:19.264_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_1
+[09-04-2023_22:48:19.272_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_1
+[09-04-2023_22:48:19.288_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_1
+[09-04-2023_22:48:19.315_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_1
+[09-04-2023_22:48:19.326_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_1
+[09-04-2023_22:48:19.352_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_2
+[09-04-2023_22:48:19.393_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_3
+[09-04-2023_22:48:19.405_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_2
+[09-04-2023_22:48:19.433_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_2
+[09-04-2023_22:48:19.450_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_2
+[09-04-2023_22:48:19.459_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_4
+[09-04-2023_22:48:19.471_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_3
+[09-04-2023_22:48:19.489_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_2
+[09-04-2023_22:48:19.499_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_3
+[09-04-2023_22:48:19.522_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_3
+[09-04-2023_22:48:19.546_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_5
+[09-04-2023_22:48:19.556_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_4
+[09-04-2023_22:48:19.574_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_3
+[09-04-2023_22:48:19.586_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_4
+[09-04-2023_22:48:19.617_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_4
+[09-04-2023_22:48:19.660_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_5
+[09-04-2023_22:48:19.789_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_5
+[09-04-2023_22:48:19.828_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_5
+[09-04-2023_22:48:19.834_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_6
+[09-04-2023_22:48:19.841_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_6
+[09-04-2023_22:48:19.849_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_2
+[09-04-2023_22:48:19.858_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_4
+[09-04-2023_22:48:19.867_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_6
+[09-04-2023_22:48:19.890_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_7
+[09-04-2023_22:48:19.898_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_7
+[09-04-2023_22:48:19.914_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_7
+[09-04-2023_22:48:19.936_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_8
+[09-04-2023_22:48:19.944_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_8
+[09-04-2023_22:48:19.960_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_8
+[09-04-2023_22:48:19.969_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_6
+[09-04-2023_22:48:19.975_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_9
+[09-04-2023_22:48:19.980_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_9
+[09-04-2023_22:48:19.985_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingGET_1
+[09-04-2023_22:48:19.990_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_5
+[09-04-2023_22:48:19.998_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_9
+[09-04-2023_22:48:20.014_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_7
+[09-04-2023_22:48:20.020_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: blockUsingPUT_1
+[09-04-2023_22:48:20.026_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_10
+[09-04-2023_22:48:20.032_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_10
+[09-04-2023_22:48:20.038_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllVendorsUsingPOST_1
+[09-04-2023_22:48:20.044_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_6
+[09-04-2023_22:48:20.054_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_10
+[09-04-2023_22:48:20.065_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_8
+[09-04-2023_22:48:20.078_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_11
+[09-04-2023_22:48:20.087_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_11
+[09-04-2023_22:48:20.095_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_3
+[09-04-2023_22:48:20.103_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_7
+[09-04-2023_22:48:20.110_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_11
+[09-04-2023_22:48:20.119_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_9
+[09-04-2023_22:48:20.125_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_12
+[09-04-2023_22:48:20.131_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_12
+[09-04-2023_22:48:20.136_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_4
+[09-04-2023_22:48:20.142_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_8
+[09-04-2023_22:48:20.148_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_12
+[09-04-2023_22:48:20.157_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addTaxUsingPOST_1
+[09-04-2023_22:48:20.162_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_13
+[09-04-2023_22:48:20.169_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_13
+[09-04-2023_22:48:20.175_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllTaxUsingPOST_1
+[09-04-2023_22:48:20.180_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_13
+[09-04-2023_22:48:20.185_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateTaxUsingPUT_1
+[09-04-2023_22:48:20.205_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_10
+[09-04-2023_22:48:20.211_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_14
+[09-04-2023_22:48:20.217_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_14
+[09-04-2023_22:48:20.224_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_5
+[09-04-2023_22:48:20.231_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_9
+[09-04-2023_22:48:20.244_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_11
+[09-04-2023_22:48:20.252_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_15
+[09-04-2023_22:48:20.260_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_15
+[09-04-2023_22:48:20.267_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_6
+[09-04-2023_22:48:20.274_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_10
+[09-04-2023_22:48:20.285_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_14
+[09-04-2023_22:48:20.292_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_12
+[09-04-2023_22:48:20.297_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_7
+[09-04-2023_22:48:20.305_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_13
+[09-04-2023_22:48:20.311_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_8
+[09-04-2023_22:48:20.339_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_14
+[09-04-2023_22:48:20.363_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: cancelUsingPOST_1
+[09-04-2023_22:48:20.375_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByCustomerIdUsingPOST_1
+[09-04-2023_22:48:20.392_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_16
+[09-04-2023_22:48:20.416_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findCanceledByIdUsingGET_1
+[09-04-2023_22:48:20.429_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findStatusHistoryByIdUsingGET_1
+[09-04-2023_22:48:20.437_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllCustomerOrderUsingPOST_1
+[09-04-2023_22:48:20.451_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateInvoiceUsingPOST_1
+[09-04-2023_22:48:20.474_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_15
+[09-04-2023_22:48:20.515_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_16
+[09-04-2023_22:48:20.524_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_17
+[09-04-2023_22:48:20.551_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_16
+[09-04-2023_22:48:20.557_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_15
+[09-04-2023_22:48:20.561_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingGET_2
+[09-04-2023_22:48:20.582_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addEmployeeUsingPOST_1
+[09-04-2023_22:48:20.598_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: cancelUsingPOST_2
+[09-04-2023_22:48:20.609_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_18
+[09-04-2023_22:48:20.628_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findCanceledByIdUsingGET_2
+[09-04-2023_22:48:20.638_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findReturnedByIdUsingGET_1
+[09-04-2023_22:48:20.649_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findStatusHistoryByIdUsingGET_2
+[09-04-2023_22:48:20.662_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllPriceHistoryUsingPOST_1
+[09-04-2023_22:48:20.672_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllVendorsUsingPOST_2
+[09-04-2023_22:48:20.684_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: markOffUsingPOST_1
+[09-04-2023_22:48:20.700_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: returnedUsingPOST_1
+[09-04-2023_22:48:20.713_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateInvoiceUsingPOST_2
+[09-04-2023_22:48:20.727_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updatePriceUsingPOST_1
+[09-04-2023_22:48:20.747_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_17
+[09-04-2023_22:48:20.758_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_16
+[09-04-2023_22:48:20.766_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_17
+[09-04-2023_22:48:20.770_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_19
+[09-04-2023_22:48:20.779_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_9
+[09-04-2023_22:48:20.788_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_17
+[09-04-2023_22:48:20.792_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_18
+[09-04-2023_22:48:20.800_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_20
+[09-04-2023_22:48:20.806_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_10
+[09-04-2023_22:48:20.813_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_11
+[09-04-2023_22:48:20.819_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_18
+[09-04-2023_22:48:20.826_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addTaxUsingPOST_2
+[09-04-2023_22:48:20.834_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_19
+[09-04-2023_22:48:20.838_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_21
+[09-04-2023_22:48:20.844_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllTaxUsingPOST_2
+[09-04-2023_22:48:20.850_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_19
+[09-04-2023_22:48:20.855_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateTaxUsingPUT_2
+[09-04-2023_22:48:20.861_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_18
+[09-04-2023_22:48:20.868_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_11
+[09-04-2023_22:48:20.874_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_12
+[09-04-2023_22:48:20.881_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_19
+[09-04-2023_22:48:20.886_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_20
+[09-04-2023_22:48:20.890_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_22
+[09-04-2023_22:48:20.895_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingGET_3
+[09-04-2023_22:48:20.901_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_12
+[09-04-2023_22:48:20.916_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_20
+[09-04-2023_22:48:20.920_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_21
+[09-04-2023_22:48:20.924_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_23
+[09-04-2023_22:48:20.934_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_13
+[09-04-2023_22:48:20.939_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingGET_1
+[09-04-2023_22:48:20.944_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_13
+[09-04-2023_22:48:20.949_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllUsingPOST_14
+[09-04-2023_22:48:20.954_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_20
+[09-04-2023_22:48:20.962_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addTaxUsingPOST_3
+[09-04-2023_22:48:20.969_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_22
+[09-04-2023_22:48:20.974_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_24
+[09-04-2023_22:48:20.980_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllTaxUsingPOST_3
+[09-04-2023_22:48:20.985_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_21
+[09-04-2023_22:48:20.990_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateTaxUsingPUT_3
+[09-04-2023_22:48:21.001_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_23
+[09-04-2023_22:48:21.005_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_25
+[09-04-2023_22:48:21.009_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllTypeUsingGET_1
+[09-04-2023_22:48:21.023_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: addUsingPOST_21
+[09-04-2023_22:48:21.028_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: deleteUsingDELETE_24
+[09-04-2023_22:48:21.034_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: findByIdUsingGET_26
+[09-04-2023_22:48:21.039_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: getAllVendorsUsingPOST_3
+[09-04-2023_22:48:21.050_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateUsingPUT_14
+[09-04-2023_22:48:21.055_IST] [INFO ] - [CachingOperationNameGenerator] - Generating unique operation named: updateStatusUsingPUT_22
+[09-04-2023_22:48:21.091_IST] [INFO ] - [JemaAppApplication] - Started JemaAppApplication in 59.472 seconds (JVM running for 61.903)
+[09-04-2023_23:07:29.986_IST] [INFO ] - [[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[09-04-2023_23:07:29.986_IST] [INFO ] - [DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[09-04-2023_23:07:29.989_IST] [INFO ] - [DispatcherServlet] - Completed initialization in 3 ms
+[09-04-2023_23:07:30.019_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:30.099_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:30.114_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:30.121_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:30.131_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:30.132_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:30.134_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:30.153_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:30.154_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:30.166_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:30.171_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:30.182_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:30.200_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:30.203_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:30.214_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:30.223_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:30.232_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:30.239_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:30.248_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:30.330_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:30.332_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:30.439_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:30.451_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:30.451_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:30.483_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:30.522_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:30.541_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
+[09-04-2023_23:07:32.213_IST] [WARN ] - [JwtRequestFilter] - JWT Token does not begin with Bearer String
